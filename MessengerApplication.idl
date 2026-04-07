@@ -1,0 +1,29 @@
+// MessengerApplication.idl : type library source for Messenger Application.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (MessengerApplication.tlb).
+
+[ uuid(c6817e2b-3909-46e7-9018-a3113ff8edf7), version(1.0) ]
+library Messenger_Application
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  Primary dispatch interface for CMessengerApplicationDoc
+
+	[ uuid(dd61008d-0fe2-4952-a13d-6b9b4bc35684) ]
+	dispinterface IMessenger_Application
+	{
+		properties:
+
+		methods:
+	};
+
+	//  Class information for CMessengerApplicationDoc
+
+	[ uuid(7cb982e1-4680-4229-8651-59624ae35a0e) ]
+	coclass Messenger_Application
+	{
+		[default] dispinterface IMessenger_Application;
+	};
+};
